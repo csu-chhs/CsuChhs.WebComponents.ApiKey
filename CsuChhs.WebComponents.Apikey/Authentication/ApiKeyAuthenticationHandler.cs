@@ -29,8 +29,7 @@ namespace CsuChhs.WebComponents.Apikey.Authentication
             IOptionsMonitor<ApiKeyAuthenticationOptions> options,
             ILoggerFactory logger,
             UrlEncoder encoder,
-            ISystemClock clock,
-            IApiKeyStore apiKeyStore) : base(options, logger, encoder, clock)
+            IApiKeyStore apiKeyStore) : base(options, logger, encoder)
         {
             _apiKeyStore = apiKeyStore;
         }
